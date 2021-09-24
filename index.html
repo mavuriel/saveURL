@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SaveURL</title>
+  </head>
+  <body>
+    
+    <h1>Hola, buenas tardes</h1>
+        
+        <p>
+          Ingresa tu URL para guardarla
+        </p>
+        <br>
+        <form>
+          <label>
+            Nombre del articulo:
+            <br>
+            <input type="text" id="nombreinput">
+          </label>
+          <br>
+          <label>
+            URL del archivo:
+            <br>
+            <input type="text" id="urlinput">
+          </label>
+          <br><br>
+          <input type="button" id="guardar" value="Guardar">
+        </form>
+
+        <table>
+          <thead>
+            <th>Nombre</th>
+            <th>URL</th>
+            <th></th>
+          </thead>
+          <tbody id="registros">
+            
+          </tbody>
+        </table>
+    
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
