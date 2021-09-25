@@ -8,12 +8,16 @@
   </head>
   <body>
     
+    <!-- 
+      TODO: manejar el cambio del mensaje de acuerdo a la hora
+     -->
     <h1>Hola, buenas tardes</h1>
     <h2>Ya estamos en linea, VERCEL</h2>
         
         <p>
           Ingresa tu URL para guardarla
         </p>
+
         <br>
         <form>
           <label>
@@ -25,11 +29,11 @@
           <label>
             URL del archivo:
             <br>
-            <input type="text" id="urlinput">
+            <input type="url" id="urlinput" autocomplete="off">
           </label>
           <br><br>
           <input type="button" id="guardar" value="Guardar">
-        </form>
+        </form>        
 
         <table>
           <thead>
