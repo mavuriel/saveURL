@@ -2,28 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SaveURL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <script type="module" src="/main.js"></script>
   </head>
   <body>
-    
-    <!-- 
-      TODO: manejar el cambio del mensaje de acuerdo a la hora
-     -->
-    <h1>Hola, buenas tardes</h1>
-    <h2>Ya estamos en linea, VERCEL</h2>
+
+    <h1>Hola, <em class="time"></em></h1>
         
         <p>
           Ingresa tu URL para guardarla
         </p>
-
         <!-- 
           TODO: agregar columna de descripcion breve
           TODO: select para las etiquetas
+          TODO: modificar columnas
          -->
         <br>
         <form>
+          <input type="hidden" id="idinput" value="">
           <label>
             Nombre del articulo:
             <br>
@@ -36,9 +35,9 @@
             <input type="url" id="urlinput" autocomplete="off">
           </label>
           <br><br>
-          <input type="button" id="guardar" value="Guardar">
+          <button type="button" id="btnguardar" value="insertar">Guardar</button>
         </form>        
-
+        <br>
         <table>
           <thead>
             <th>Nombre</th>
@@ -49,7 +48,5 @@
             
           </tbody>
         </table>
-    
-    <script type="module" src="/main.js"></script>
   </body>
 </html>
